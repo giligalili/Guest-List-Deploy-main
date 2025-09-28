@@ -10,10 +10,10 @@ terraform {
 
   backend "s3" {
     bucket               = "guestlist-tfstate-bucket"
-    key                  = "terraform.tfstate"   # key קצר; ה-workspace יתווסף בנתיב
+    key                  = "terraform.tfstate"   
     region               = "us-east-1"
     encrypt              = true
-    dynamodb_table       = "terraform-locks"     # נעילה בטוחה
-    workspace_key_prefix = "envs"                # state יישמר תחת: envs/<workspace>/terraform.tfstate
+    dynamodb_table       = "terraform-locks"     
+    workspace_key_prefix = "envs"                
   }
 }
