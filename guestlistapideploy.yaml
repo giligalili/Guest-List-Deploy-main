@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
       - name: guestlistcontainer
-        image: giligalili/guestlistapi:ver03
+        image: giligalili/guestlistapi:ver04
 
  
